@@ -58,9 +58,9 @@ public class DatecsPrinter extends CordovaPlugin {
 			case disconnect:
 				try {
 					printer.closeActiveConnections();
-					callbackContext.success("Impressora desconectada");
+					callbackContext.success("Impresora desconectada");
 				} catch (Exception e) {
-					callbackContext.error("Erro ao desconectar impressora: " + e.getMessage());
+					callbackContext.error("Error al desconectar la impresora: " + e.getMessage());
 				}
 				break;
 			case feedPaper:
